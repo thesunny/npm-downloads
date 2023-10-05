@@ -1,0 +1,40 @@
+## .prettierignore required in each workspace
+## https://github.com/prettier/prettier/issues/4081
+## not required for .prettierrc
+
+# build
+.build/
+build/
+
+# dist (`dist` used by Vite)
+.dist/
+dist/
+
+# dotenv
+.env/
+
+# eslint
+.eslintcache
+eslint.log
+
+# mac
+.DS_Store
+
+# next.js
+.next/
+out/
+
+# node_modules
+node_modules/
+
+# temp
+.temp/
+
+# turborepo
+.turbo
+
+# typescript
+tsconfig.tsbuildinfo
+
+# vercel
+.vercel/

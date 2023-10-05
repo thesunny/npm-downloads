@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "ts-jest",
+  "extends": "./tsconfig.ts-node.json"
+}

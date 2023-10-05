@@ -1,0 +1,4 @@
+{
+  "extends": "tsconfig/tsconfig.ts-jest.json",
+  "ignore": [".dist", "node_modules"]
+}

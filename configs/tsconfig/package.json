@@ -1,0 +1,14 @@
+{
+  "name": "tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.4.5",
+    "typescript": "^2.4.2",
+    "tsconfig-paths": "^4.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

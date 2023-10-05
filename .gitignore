@@ -1,0 +1,42 @@
+# build
+.build/
+build/
+
+# data (used as storage for the app while running)
+.data
+
+# dist (`dist` used by Vite)
+.dist/
+dist/
+
+# dotenv
+.env/
+
+# eslint
+eslint.log
+.eslintcache
+
+# mac
+.DS_Store
+
+# next.js
+.next/
+out/
+
+# node_modules
+node_modules/
+
+# temp
+.temp/
+
+# tsup
+tsup.config.bundled*.mjs
+
+# turborepo
+.turbo
+
+# typescript
+tsconfig.tsbuildinfo
+
+# vercel
+.vercel/

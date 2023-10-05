@@ -1,0 +1,31 @@
+{
+  "name": "npm-downloads",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@portive/fire": "^2.0.12",
+    "@thesunny/script-utils": "^0.2.2",
+    "turbo": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "-- build": "# build",
+    "build": "turbo run build",
+    "-- changesets": "# changesets",
+    "changeset": "is-git-clean && changeset",
+    "-- dev": "# dev",
+    "dev": "turbo run dev",
+    "-- fire": "# fire",
+    "fire": "fire ~/projects/fire/fire-monorepo fire",
+    "-- lint": "# lint",
+    "lint": "turbo run lint",
+    "-- release": "# release",
+    "release": "is-git-clean && turbo run lint test:once && changeset version && changeset publish",
+    "-- end": "# end"
+  }
+}
