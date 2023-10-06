@@ -20,6 +20,7 @@
     "changeset": "is-git-clean && changeset",
     "-- dev": "# dev",
     "dev": "turbo run dev",
+    "dev:web": "pnpm --filter web dev",
     "-- fire": "# fire",
     "fire": "fire ~/projects/fire/fire-monorepo fire",
     "-- lint": "# lint",

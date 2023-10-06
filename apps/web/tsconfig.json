@@ -1,0 +1,10 @@
+{
+  "extends": "tsconfig/tsconfig.base.json",
+  "exclude": [".dist", "node_modules"],
+  "compilerOptions": {
+    "allowJs": true,
+    "incremental": true,
+    "module": "esnext"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}
