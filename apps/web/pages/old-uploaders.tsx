@@ -22,5 +22,11 @@ const data = [
 const secondaryPackageNames: string[] = []
 
 export default function IndexPage() {
-  return <DownloadsChart data={data} secondary={secondaryPackageNames} />
+  return (
+    <DownloadsChart
+      data={data}
+      secondary={secondaryPackageNames}
+      max={3000000}
+    />
+  )
 }

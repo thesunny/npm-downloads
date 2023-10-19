@@ -11,7 +11,7 @@ interface DownloadData {
   day: string
 }
 
-interface PackageData {
+export interface PackageData {
   start: string
   end: string
   package: string
@@ -69,9 +69,11 @@ const chartColors: string[] = [
 export function DownloadsChart({
   data,
   secondary,
+  max,
 }: {
   data: PackageData[]
   secondary: string[]
+  max: number
 }) {
   const nextData = data.map((entry) => {
     return {
@@ -87,7 +89,7 @@ export function DownloadsChart({
         width={720}
         height={480}
         theme={VictoryTheme.material}
-        domain={{ y: [0, 3000000] }}
+        // domain={{ y: [0, max] }}
       >
         {nextData.map((entry, index) => {
           return (
